@@ -1,0 +1,18 @@
+{
+  "url": "children-followup",
+  "order": 15,
+  "title": "المتابعة المنزلية للأطفال",
+  "section": "kids",
+  "image": "img/n/svc-mother.jpg",
+  "description": "زيارات متابعة لحالة الطفل وتطوره.",
+  "includes": [
+    "زيارات متابعة",
+    "قياس النمو",
+    "توصيات للأهل"
+  ],
+  "suitable_for": [
+    "الأطفال الذين يحتاجون متابعة دورية"
+  ],
+  "featured": false,
+  "hidden": false
+}

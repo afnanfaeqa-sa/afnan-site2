@@ -1,0 +1,21 @@
+{
+  "url": "home-physiotherapy",
+  "order": 16,
+  "title": "العلاج الطبيعي المنزلي",
+  "section": "rehab",
+  "image": "img/n/svc-physio.jpg",
+  "description": "جلسات علاج طبيعي بأجهزة وتمارين داخل منزلك.",
+  "includes": [
+    "تقييم حركي",
+    "جلسات بأجهزة وتمارين",
+    "برنامج تمارين منزلي"
+  ],
+  "suitable_for": [
+    "آلام الظهر والمفاصل",
+    "ضعف الحركة",
+    "كبار السن"
+  ],
+  "featured": true,
+  "featured_order": 3,
+  "hidden": false
+}

@@ -1,0 +1,18 @@
+{
+  "url": "special-needs-care",
+  "order": 12,
+  "title": "رعاية ذوي الهمم",
+  "section": "elder",
+  "image": "img/n/svc-physio.jpg",
+  "description": "رعاية منزلية مخصصة تراعي احتياجات كل حالة.",
+  "includes": [
+    "خطة رعاية مخصصة",
+    "مساعدة يومية",
+    "تنسيق مع العلاج الطبيعي عند الحاجة"
+  ],
+  "suitable_for": [
+    "الأطفال والكبار من ذوي الهمم"
+  ],
+  "featured": false,
+  "hidden": false
+}

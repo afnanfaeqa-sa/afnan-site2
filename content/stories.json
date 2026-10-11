@@ -1,0 +1,52 @@
+{
+  "stories": [
+    {
+      "label": "خدماتنا",
+      "image": "img/n/svc-nursing.jpg",
+      "title": "23 خدمة في بيتكم",
+      "text": "من زيارة الطبيب إلى التمريض المقيم والتحاليل، بكوادر مرخّصة.",
+      "link": "services.html",
+      "button": "تصفّح الخدمات"
+    },
+    {
+      "label": "كبار السن",
+      "image": "img/n/prg-elderly.jpg",
+      "title": "رعاية تحفظ الكرامة",
+      "text": "مرافقة يومية ومتابعة أدوية وزيارات تمريضية منتظمة.",
+      "link": "s-elderly-care.html",
+      "button": "تفاصيل الخدمة"
+    },
+    {
+      "label": "الأم والطفل",
+      "image": "img/n/svc-mother.jpg",
+      "title": "أسابيع المولود الأولى",
+      "text": "عناية بالمولود ودعم للأم في هدوء البيت.",
+      "link": "s-infant-care.html",
+      "button": "تفاصيل الخدمة"
+    },
+    {
+      "label": "نصائح",
+      "image": "img/n/prg-chronic.jpg",
+      "title": "دليلك الصحي",
+      "text": "مقالات قصيرة تساعدك ترعى أحبابك في البيت.",
+      "link": "guide.html",
+      "button": "اقرأ المقالات"
+    },
+    {
+      "label": "فريقنا",
+      "image": "img/n/step-assess.jpg",
+      "title": "من نحن",
+      "text": "فريق صحي متكامل، يجيكم لين باب البيت.",
+      "link": "about.html",
+      "button": "تعرّف علينا"
+    },
+    {
+      "label": "للشركات",
+      "image": "img/n/partners2.jpg",
+      "title": "شراكات صحية",
+      "text": "نكمل رعاية مرضاكم ومنسوبيكم في بيوتهم.",
+      "link": "partners.html",
+      "button": "فريق الشراكات"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "url": "mobility-programs",
+  "order": 19,
+  "title": "برامج تحسين الحركة",
+  "section": "rehab",
+  "image": "img/n/prg-rehab.jpg",
+  "description": "برامج لتحسين التوازن والمشي والقدرة البدنية.",
+  "includes": [
+    "تمارين توازن ومشي",
+    "تقوية عضلية",
+    "تقييم دوري"
+  ],
+  "suitable_for": [
+    "كبار السن",
+    "من يعاني من ضعف التوازن"
+  ],
+  "featured": false,
+  "hidden": false
+}

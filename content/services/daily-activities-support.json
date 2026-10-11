@@ -1,0 +1,18 @@
+{
+  "url": "daily-activities-support",
+  "order": 9,
+  "title": "المساعدة في الأنشطة اليومية",
+  "section": "elder",
+  "image": "img/n/hero.jpg",
+  "description": "دعم في الاستحمام والملبس والتنقل والوجبات.",
+  "includes": [
+    "المساعدة في الاستحمام والملبس",
+    "المساعدة في التنقل داخل المنزل",
+    "المساعدة في الوجبات"
+  ],
+  "suitable_for": [
+    "من يجد صعوبة في العناية الشخصية"
+  ],
+  "featured": false,
+  "hidden": false
+}

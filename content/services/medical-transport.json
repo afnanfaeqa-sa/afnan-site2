@@ -1,0 +1,18 @@
+{
+  "url": "medical-transport",
+  "order": 23,
+  "title": "خدمات النقل الطبي",
+  "section": "car",
+  "image": "img/n/step-arrive.jpg",
+  "description": "نقل المريض بأمان مع مرافقة صحية مدرّبة.",
+  "includes": [
+    "نقل آمن",
+    "مرافق صحي مدرّب"
+  ],
+  "suitable_for": [
+    "المواعيد والمراجعات في المستشفى",
+    "الخروج من المستشفى للمنزل"
+  ],
+  "featured": false,
+  "hidden": false
+}

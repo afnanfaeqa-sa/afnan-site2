@@ -1,0 +1,21 @@
+{
+  "url": "home-lab-tests",
+  "order": 20,
+  "title": "التحاليل والفحوصات المنزلية",
+  "section": "lab",
+  "image": "img/n/svc-lab.jpg",
+  "description": "إجراء التحاليل المخبرية في منزلك وتسليم النتائج.",
+  "includes": [
+    "سحب العينة في المنزل",
+    "نقل آمن للمختبر",
+    "تسليم النتائج"
+  ],
+  "suitable_for": [
+    "مرضى السكري والضغط",
+    "كبار السن",
+    "من يفضّل تجنب الانتظار"
+  ],
+  "featured": true,
+  "featured_order": 4,
+  "hidden": false
+}

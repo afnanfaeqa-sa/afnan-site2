@@ -1,0 +1,19 @@
+{
+  "url": "nursing-visits",
+  "order": 5,
+  "title": "الزيارات التمريضية",
+  "section": "nurse",
+  "image": "img/n/step-arrive.jpg",
+  "description": "زيارات تمريضية محددة بحسب حاجة المريض.",
+  "includes": [
+    "زيارة بموعد محدد",
+    "تنفيذ الإجراء المطلوب",
+    "تقرير مختصر للأسرة"
+  ],
+  "suitable_for": [
+    "حالات تحتاج إجراءً تمريضيًا محددًا",
+    "متابعة قصيرة المدى"
+  ],
+  "featured": false,
+  "hidden": false
+}

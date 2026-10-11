@@ -1,0 +1,19 @@
+{
+  "url": "clinical-nutrition",
+  "order": 22,
+  "title": "التغذية العلاجية",
+  "section": "food",
+  "image": "img/n/prg-chronic.jpg",
+  "description": "خطة غذائية علاجية مناسبة لحالتك الصحية.",
+  "includes": [
+    "تقييم غذائي",
+    "خطة غذائية مكتوبة",
+    "متابعة"
+  ],
+  "suitable_for": [
+    "مرضى السكري والضغط",
+    "بعد العمليات"
+  ],
+  "featured": false,
+  "hidden": false
+}

@@ -1,0 +1,19 @@
+{
+  "url": "continuous-nursing",
+  "order": 6,
+  "title": "الرعاية التمريضية المستمرة",
+  "section": "nurse",
+  "image": "img/n/prg-surgery.jpg",
+  "description": "متابعة تمريضية ممتدة لحالات تحتاج إشرافًا دائمًا.",
+  "includes": [
+    "خطة تمريضية ممتدة",
+    "متابعة الأدوية والمؤشرات",
+    "تقارير دورية"
+  ],
+  "suitable_for": [
+    "الحالات المزمنة المعقدة",
+    "المرضى طريحي الفراش"
+  ],
+  "featured": false,
+  "hidden": false
+}

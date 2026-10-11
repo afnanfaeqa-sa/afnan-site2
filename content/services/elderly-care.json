@@ -1,0 +1,21 @@
+{
+  "url": "elderly-care",
+  "order": 8,
+  "title": "رعاية كبار السن",
+  "section": "elder",
+  "image": "img/n/prg-elderly.jpg",
+  "description": "رعاية شاملة تحفظ كرامة كبار السن وراحتهم.",
+  "includes": [
+    "مساعدة في الأنشطة اليومية",
+    "متابعة الأدوية",
+    "قياس المؤشرات الحيوية",
+    "تواصل مستمر مع الأسرة"
+  ],
+  "suitable_for": [
+    "الوالدين وكبار السن في الأسرة",
+    "مرضى الزهايمر وضعف الحركة"
+  ],
+  "featured": true,
+  "featured_order": 2,
+  "hidden": false
+}

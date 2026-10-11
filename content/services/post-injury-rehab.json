@@ -1,0 +1,19 @@
+{
+  "url": "post-injury-rehab",
+  "order": 18,
+  "title": "التأهيل بعد الإصابات",
+  "section": "rehab",
+  "image": "img/n/prg-rehab.jpg",
+  "description": "عودة تدريجية للحركة بعد الإصابات الرياضية أو الحوادث.",
+  "includes": [
+    "تقييم الإصابة",
+    "تمارين علاجية",
+    "عودة تدريجية للنشاط"
+  ],
+  "suitable_for": [
+    "الإصابات الرياضية",
+    "إصابات الحوادث"
+  ],
+  "featured": false,
+  "hidden": false
+}

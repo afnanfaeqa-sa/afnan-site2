@@ -1,0 +1,20 @@
+{
+  "url": "infant-care",
+  "order": 13,
+  "title": "رعاية الأم والمولود",
+  "section": "kids",
+  "image": "img/n/svc-mother.jpg",
+  "description": "عناية متخصصة بالمولود في أسابيعه الأولى.",
+  "includes": [
+    "العناية بالمولود",
+    "دعم الأم في الأسابيع الأولى",
+    "متابعة الرضاعة والنوم"
+  ],
+  "suitable_for": [
+    "الأمهات بعد الولادة",
+    "المواليد الجدد"
+  ],
+  "featured": true,
+  "featured_order": 5,
+  "hidden": false
+}

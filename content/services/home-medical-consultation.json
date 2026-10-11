@@ -1,0 +1,19 @@
+{
+  "url": "home-medical-consultation",
+  "order": 3,
+  "title": "الاستشارات والمتابعة الطبية",
+  "section": "med",
+  "image": "img/n/prg-chronic.jpg",
+  "description": "استشارة ومتابعة طبية لحالتك مع توصيات مكتوبة.",
+  "includes": [
+    "استشارة طبية",
+    "توصيات مكتوبة",
+    "متابعة لاحقة"
+  ],
+  "suitable_for": [
+    "من يحتاج رأيًا طبيًا في حالته",
+    "متابعة بعد الخروج من المستشفى"
+  ],
+  "featured": false,
+  "hidden": false
+}

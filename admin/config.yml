@@ -1,0 +1,161 @@
+# Dashboard for the second Afnan site. Every save edits a file in content/ on GitHub,
+# and Cloudflare rebuilds the site automatically (about two minutes).
+backend:
+  name: github
+  repo: afnanfaeqa-sa/afnan-site2
+  branch: main
+
+media_folder: static/img/uploads
+public_folder: /img/uploads
+
+collections:
+  # ---------------------------------------------------------------- home page
+  - name: home
+    label: "الصفحة الرئيسية"
+    files:
+      - name: hero
+        label: "الصورة والعنوان أعلى الصفحة"
+        file: content/hero.json
+        format: json
+        fields:
+          - { name: image, label: "الصورة (أفقية، والناس في الجهة اليمنى)", widget: image }
+          - { name: eyebrow, label: "السطر الصغير فوق العنوان", widget: string }
+          - { name: title_1, label: "العنوان: السطر الأول", widget: string }
+          - { name: title_2, label: "العنوان: بداية السطر الثاني (أبيض)", widget: string }
+          - { name: title_gold, label: "العنوان: نهاية السطر الثاني (ذهبي)", widget: string }
+          - { name: text, label: "النص تحت العنوان", widget: text }
+
+      - name: programs
+        label: "برامج الرعاية (الكروت المتراصة)"
+        file: content/programs.json
+        format: json
+        fields:
+          - name: programs
+            label: "البرامج"
+            label_singular: "برنامج"
+            widget: list
+            fields:
+              - { name: title, label: "اسم البرنامج", widget: string }
+              - { name: text, label: "الوصف", widget: text }
+              - { name: duration, label: "المدة", widget: string, hint: "مثال: شهر قابل للتجديد" }
+              - { name: image, label: "الصورة", widget: image }
+              - { name: service, label: "الخدمة اللي تنفتح في شاشة الحجز", widget: string, hint: "مثال: رعاية كبار السن" }
+
+      - name: stories
+        label: "القصص (داخل الشعار)"
+        file: content/stories.json
+        format: json
+        fields:
+          - name: stories
+            label: "القصص"
+            label_singular: "قصة"
+            widget: list
+            fields:
+              - { name: label, label: "الاسم الصغير", widget: string, hint: "مثال: خدماتنا" }
+              - { name: image, label: "الصورة (طولية)", widget: image }
+              - { name: title, label: "العنوان الكبير", widget: string }
+              - { name: text, label: "النص", widget: text }
+              - { name: button, label: "نص الزر", widget: string }
+              - { name: link, label: "رابط الزر", widget: string, hint: "مثال: services.html أو s-home-nursing.html" }
+
+      - name: reviews
+        label: "آراء العملاء"
+        file: content/reviews.json
+        format: json
+        fields:
+          - name: reviews
+            label: "الآراء"
+            label_singular: "رأي"
+            widget: list
+            fields:
+              - { name: text, label: "نص الرأي", widget: text }
+              - { name: name, label: "الاسم والمدينة", widget: string, hint: "مثال: أم عبدالله — الرياض" }
+
+      - name: faq
+        label: "الأسئلة الشائعة"
+        file: content/faq.json
+        format: json
+        fields:
+          - name: faq
+            label: "الأسئلة"
+            label_singular: "سؤال"
+            widget: list
+            fields:
+              - { name: q, label: "السؤال", widget: string }
+              - { name: a, label: "الإجابة", widget: text }
+
+  # ---------------------------------------------------------------- services
+  - name: services
+    label: "الخدمات"
+    label_singular: "خدمة"
+    folder: content/services
+    extension: json
+    format: json
+    create: true
+    slug: "{{url}}"
+    identifier_field: title
+    summary: "{{title}}"
+    sortable_fields: [order, title]
+    fields:
+      - { name: title, label: "اسم الخدمة", widget: string }
+      - { name: url, label: "رابط الصفحة (بالإنجليزي)", widget: string, hint: "حروف إنجليزية صغيرة وشرطات فقط، مثال: home-nursing" }
+      - { name: order, label: "الترتيب", widget: number, default: 50 }
+      - name: section
+        label: "القسم"
+        widget: select
+        options:
+          - { label: "الخدمات الطبية", value: med }
+          - { label: "التمريض المنزلي", value: nurse }
+          - { label: "كبار السن وذوو الهمم", value: elder }
+          - { label: "الأم والطفل", value: kids }
+          - { label: "العلاج الطبيعي والتأهيل", value: rehab }
+          - { label: "التحاليل المنزلية", value: lab }
+          - { label: "التغذية العلاجية", value: food }
+          - { label: "النقل الطبي", value: car }
+      - { name: image, label: "صورة الخدمة", widget: image }
+      - { name: description, label: "وصف قصير", widget: text }
+      - { name: includes, label: "ماذا تشمل الخدمة", label_singular: "بند", widget: list, field: { name: item, label: "بند", widget: string } }
+      - { name: suitable_for, label: "لمن تناسب", label_singular: "فئة", widget: list, field: { name: item, label: "فئة", widget: string } }
+      - { name: featured, label: "تظهر في الصفحة الرئيسية", widget: boolean, default: false, required: false, hint: "يفضّل 6 خدمات بالضبط" }
+      - { name: featured_order, label: "ترتيبها في الرئيسية", widget: number, default: 9, required: false }
+      - { name: hidden, label: "إخفاء الخدمة", widget: boolean, default: false, required: false }
+
+  # ---------------------------------------------------------------- articles
+  - name: articles
+    label: "دليلك الصحي (المقالات)"
+    label_singular: "مقال"
+    folder: content/articles
+    extension: json
+    format: json
+    create: true
+    slug: "{{url}}"
+    identifier_field: title
+    summary: "{{title}}"
+    sortable_fields: [order, title]
+    fields:
+      - { name: title, label: "عنوان المقال", widget: string }
+      - { name: url, label: "رابط المقال (بالإنجليزي)", widget: string, hint: "حروف إنجليزية صغيرة وشرطات فقط، مثال: blood-pressure-tips" }
+      - { name: order, label: "الترتيب", widget: number, default: 10, hint: "الأصغر يظهر أولًا" }
+      - { name: label, label: "التصنيف الظاهر على المقال", widget: string, hint: "مثال: كبار السن" }
+      - { name: minutes, label: "مدة القراءة (دقائق)", widget: number, default: 3 }
+      - { name: image, label: "صورة المقال", widget: image }
+      - { name: excerpt, label: "ملخص قصير", widget: text }
+      - { name: service, label: "الخدمة اللي يحجزها القارئ من المقال", widget: relation, collection: services, value_field: title, search_fields: [title], display_fields: [title] }
+      - { name: body, label: "نص المقال", widget: markdown, hint: "استخدم العناوين والقوائم من شريط الأدوات" }
+      - { name: hidden, label: "إخفاء المقال", widget: boolean, default: false, required: false }
+
+  # ---------------------------------------------------------------- settings
+  - name: settings
+    label: "الإعدادات"
+    files:
+      - name: general
+        label: "أرقام التواصل والإعدادات العامة"
+        file: content/settings.json
+        format: json
+        fields:
+          - { name: whatsapp, label: "رقم الواتساب والاتصال (دولي بدون +)", widget: string, hint: "مثال: 966555185244" }
+          - { name: phone_display, label: "الرقم كما يظهر في الموقع", widget: string, hint: "مثال: +966 55 518 5244" }
+          - { name: staff_count, label: "عدد الكوادر", widget: number }
+          - { name: regions, label: "عدد المناطق", widget: number }
+          - { name: site_url, label: "رابط الموقع النهائي", widget: string, required: false, hint: "يُكتب عند الإطلاق، مثال: https://afnan.sa" }
+          - { name: preview_mode, label: "وضع المعاينة (إخفاء الموقع عن جوجل)", widget: boolean, hint: "اقفله يوم الإطلاق على الدومين" }

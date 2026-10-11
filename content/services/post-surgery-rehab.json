@@ -1,0 +1,18 @@
+{
+  "url": "post-surgery-rehab",
+  "order": 17,
+  "title": "التأهيل بعد العمليات",
+  "section": "rehab",
+  "image": "img/n/prg-surgery.jpg",
+  "description": "تأهيل حركي آمن بعد التدخلات الجراحية.",
+  "includes": [
+    "خطة تأهيل حسب العملية",
+    "جلسات متدرجة",
+    "متابعة التقدم"
+  ],
+  "suitable_for": [
+    "بعد عمليات الركبة والورك والعمود الفقري"
+  ],
+  "featured": false,
+  "hidden": false
+}

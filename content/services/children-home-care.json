@@ -1,0 +1,18 @@
+{
+  "url": "children-home-care",
+  "order": 14,
+  "title": "رعاية الأطفال في المنزل",
+  "section": "kids",
+  "image": "img/n/svc-mother.jpg",
+  "description": "رعاية صحية منزلية للأطفال بأيدٍ مدرّبة.",
+  "includes": [
+    "متابعة الحالة الصحية",
+    "إعطاء الأدوية",
+    "تقرير للأهل"
+  ],
+  "suitable_for": [
+    "الأطفال أثناء المرض أو بعد العمليات"
+  ],
+  "featured": false,
+  "hidden": false
+}

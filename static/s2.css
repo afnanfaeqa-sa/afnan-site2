@@ -248,7 +248,9 @@ body.bk-open .secbtn{transform:scale(.6);opacity:0;pointer-events:none}
 .lab{display:block;font-size:13px;color:var(--on-night-soft);margin:4px 0 10px}
 .cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
 .pill{background:transparent;border:1px solid rgba(201,162,78,.45);color:var(--on-night);border-radius:999px;padding:9px 15px;font:inherit;font-size:14.5px;cursor:pointer;transition:background .25s,color .25s}
-.pill.sel,.pill:hover{background:var(--gold);color:var(--night);border-color:var(--gold)}
+.pill.sel{background:var(--gold);color:var(--night);border-color:var(--gold)}
+@media (hover:hover){.pill:not(.sel):hover{border-color:var(--gold);color:var(--gold)}}
+.knob{transition:transform .55s cubic-bezier(.22,1,.36,1),opacity .3s}.knob.drag{transition:opacity .3s}
 .days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
 .day{display:flex;flex-direction:column;align-items:center;gap:2px;padding:10px 0 9px;border-radius:14px;border:1px solid rgba(244,239,228,.12);background:transparent;color:var(--on-night);font:inherit;cursor:pointer;transition:background .25s,border-color .25s}
 .day small{font-size:11px;color:var(--on-night-soft)}

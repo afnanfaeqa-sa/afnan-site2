@@ -100,7 +100,7 @@
   gsap.from(".sec-head > div > *",{y:36,opacity:0,duration:1.1,stagger:.08,ease:E,scrollTrigger:{trigger:"#guide",start:"top 75%"}});
   gsap.from(".qa",{y:30,opacity:0,duration:1,stagger:.07,ease:E,scrollTrigger:{trigger:"#qaList",start:"top 80%"}});
   gsap.from(".ptn-ph",{clipPath:"inset(100% 0 0 0)",duration:1.6,ease:"expo.inOut",scrollTrigger:{trigger:"#partners",start:"top 70%"}});
-  gsap.from(".who-list div",{x:-40,opacity:0,duration:1,stagger:.08,ease:E,scrollTrigger:{trigger:".who-list",start:"top 85%"}});
+  gsap.from(".who-list div",{y:24,opacity:0,duration:1,stagger:.08,ease:E,scrollTrigger:{trigger:".who-list",start:"top 85%"}});
 
   gsap.from(".end .wrap > *",{y:50,opacity:0,duration:1.2,stagger:.1,ease:E,scrollTrigger:{trigger:".end",start:"top 72%"}});
   gsap.from(".end .arch",{yPercent:30,opacity:0,duration:2,stagger:.15,ease:E,scrollTrigger:{trigger:".end",start:"top 80%"}});
